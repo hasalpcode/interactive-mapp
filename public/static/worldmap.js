@@ -1,3 +1,4 @@
+
 /*Copyright 2010-2021 Simplemaps.com
 html5worldmapv4.211 - trial version
 Use pursuant to license agreement at https://simplemaps.com/license */

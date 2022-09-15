@@ -1,4 +1,16 @@
+var data 
+      $(document).ready(function(){
+		$.get("http://127.0.0.1:8000/show", function(response){
+			console.log(response);
+			 data = JSON.stringify(response);
+			 console.log(response[0]);
+			 // simplemaps_worldmap_mapdata.locations[13].description = 
+		})
+		
+	});
+console.log(data)
 var simplemaps_worldmap_mapdata = {
+
 main_settings:{
 		//General settings
 		width: 'responsive', //or 'responsive'
@@ -7,7 +19,7 @@ main_settings:{
 		popups: 'on_click', //on_click, on_hover, or detect
 	
 		//State defaults
-    state_description:  "Have multiple links for each state<br /><a  href='#' onClick=\"alert('You would go to Link 1')\">Link 1</a><br /><a  href='#' onClick=\"alert('You would go to Link 2')\">Link 2</a><br /><a  href='#' onClick=\"alert('You would go to Link 3')\">Link 3</a><br />",
+    state_description:  "   Have multiple links for each state<br /><a  href='#' onClick=\"alert('You would go to Link 1')\">Link 1</a><br /><a  href='#' onClick=\"alert('You would go to Link 2')\">Link 2</a><br /><a  href='#' onClick=\"alert('You would go to Link 3')\">Link 3</a><br />",
     state_color: '#88A4BC',
     state_hover_color: '#3B729F',
     state_url: '',
@@ -1487,7 +1499,7 @@ locations:{
     lng:7.7956424,
     lat:7.3580883,
     name: 'Cameroun',
-    description: [
+    description:  [
       '<div><table class="table " style="width:1000px;"><thead><th scope="col">#</th><th scope="col" >Nature</th><th scope="col">Localization</th></thead><tbody><tr><td>1</td><td>Teacher incentive<br>School cash grant</td><td>Results in Education for All Children (REACH)<br>Trust Fund program: 20 primary schools in Lagdo<br>subdivision in Cameroon’s North Region.</td></tr><tr><td>2</td><td>CVA <br> School improvement grant - SIG<br> School cash grant</td><td>Addressing educational and psychosocial needs<br>of girls and boys living in conflict-affected areas in<br>Cameroon: regions of North-West, South-West,<br>Far-North, Adamawa, and East.</td></tr></tbody></table></div>',
       '<a href="#">Questionnaire</a>'
     ],
@@ -1597,7 +1609,7 @@ locations:{
     name: 'Haïti',
     description: [
       '<div><table class="table " style="width:1000px;"><thead><th scope="col">#</th><th scope="col" >Nature</th><th scope="col">Localization</th></thead><tbody><tr><td>1</td><td>CVA <br>School cash grant</td><td>National coverage.</td></tr></tbody></table></div>',
-      '<a href="/forms">Questionnaire</a>'
+      '<a href="/forms/13">Questionnaire</a>'
     ],
     color: 'default',
     hover_color: 'default',
@@ -1766,7 +1778,7 @@ locations:{
     lat:15.3640135,
     name: 'Yémen',
     description: [
-		'<div><table class="table " style="width:1000px;"><thead><th scope="col">#</th><th scope="col" >Nature</th><th scope="col">Localization</th></thead><tbody><tr><td>1</td><td>Teacher incentive<br>School improvement grant - SIG</td><td> 11 governorates under the de facto authorities.</td></tr></tbody></table></div>',
+		'<div>  <table class="table " style="width:1000px;"><thead><th scope="col">#</th><th scope="col" >Nature</th><th scope="col">Localization</th></thead><tbody><tr><td>1</td><td>Teacher incentive<br>School improvement grant - SIG</td><td> 11 governorates under the de facto authorities.<?php echo "hh" ?></td></tr></tbody></table></div>',
 		'<a href="/forms">Questionnaire</a>'
 	  ],
     color: 'default',

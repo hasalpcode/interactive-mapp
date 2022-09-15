@@ -15,5 +15,7 @@ use App\Http\Controllers\mapping;
 */
 
 
-Route::get('/', [mapping::class,'index']);
+Route::get('/', [mapping::class,'index'])->name('index');
 Route::get('/forms', [mapping::class,'questions'])->name('forms');
+Route::post('/store', [mapping::class,'store'])->name('store');
+Route::get('/show', [mapping::class,'show'])->name('show');
