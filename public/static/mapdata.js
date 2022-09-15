@@ -3,8 +3,8 @@ var data
 		$.get("http://127.0.0.1:8000/show", function(response){
 			console.log(response);
 			 data = JSON.stringify(response);
-			 console.log(response[0]);
-			 // simplemaps_worldmap_mapdata.locations[13].description = 
+			 console.log(response[0].q16);
+			 simplemaps_worldmap_mapdata.locations.description 
 		})
 		
 	});
